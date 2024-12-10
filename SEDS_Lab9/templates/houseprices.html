@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>House Prices Details</title>
+</head>
+<body>
+  <center>
+    <h1>House Prices Details</h1>
+    <table border="1">
+      <tr>
+        <th>date</th>
+        <th>price</th>
+        <th>bedrooms</th>
+        <th>bathrooms</th>
+        <th>sqft_living</th>
+        <th>floors</th>
+        <th>city</th>
+        <th>country</th>
+      </tr>
+      {% for item in data %}
+      <tr>
+        <td>{{ item.date }}</td>
+        <td>{{ item.price }}</td>
+        <td>{{ item.bedrooms }}</td>
+        <td>{{ item.bathrooms }}</td>
+        <td>{{ item.sqft_living }}</td>
+        <td>{{ item.floors }}</td>
+        <td>{{ item.city }}</td>
+        <td>{{ item.country }}</td>
+      </tr>
+      {% endfor %}
+  </center>
+</body>
+</html>
